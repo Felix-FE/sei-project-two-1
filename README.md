@@ -54,7 +54,7 @@ Process:
         The add to collection button uses the window.localStorage entity to save the ids to their respective local storage arrays.
 
 
-![alt_text](src/images/Screenshot2021-10-29at13.04.02.png "image_tooltip")
+![combining the API](src/images/Screenshot2021-10-29at13.04.02.png "combining the api")
 
 
 3. Combining the APIs 
