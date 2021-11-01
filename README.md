@@ -41,17 +41,17 @@ Process:
 
 1. Planning/ decision making:
 
-        Considering our pair programming and the remote nature of our partnership was the focal point of our planning and how we were to delegate the jobs between us. As our project used two APIs delivering a format of information that was almost identical, we saw it fit to define what the choice filtering options were and the activity of the randomization feature. Splitting the API requests and data formatting per API was our first course of action. We separately managed the data handling for each API.
+  Considering our pair programming and the remote nature of our partnership was the focal point of our planning and how we were to delegate the jobs between us. As our project used two APIs delivering a format of information that was almost identical, we saw it fit to define what the choice filtering options were and the activity of the randomization feature. Splitting the API requests and data formatting per API was our first course of action. We separately managed the data handling for each API.
 
 2. Designing the API’s
 
-        Following reading the API’s documentation, creating a component that made the required API calls in response to user input was the next step. I used JSX to return user input fields. The first being a cuisine selection drop down to filter the list, the following being a button the user could press to add the dish to the collection, finally there needed to be a randomize function to provide an option to the user. Each button had an event handler linked to specify the type of API request. 
+  Following reading the API’s documentation, creating a component that made the required API calls in response to user input was the next step. I used JSX to return user input fields. The first being a cuisine selection drop down to filter the list, the following being a button the user could press to add the dish to the collection, finally there needed to be a randomize function to provide an option to the user. Each button had an event handler linked to specify the type of API request. 
 
 
-        The cuisine choice changed the choice to select from dishes within the provided cuisine, by making an API call for the dishes within that cuisine. If there is no selection it makes an API call directly for a random dish.
+  The cuisine choice changed the choice to select from dishes within the provided cuisine, by making an API call for the dishes within that cuisine. If there is no selection it makes an API call directly for a random dish.
 
 
-        The add to collection button uses the window.localStorage entity to save the ids to their respective local storage arrays.
+  The add to collection button uses the window.localStorage entity to save the ids to their respective local storage arrays.
 
 
 ![combining the API](src/images/Screenshot2021-10-29at13.04.02.png "combining the api")
@@ -59,7 +59,7 @@ Process:
 
 3. Combining the APIs 
 
-        After we had finished our respective API instances, the next step was to introduce the two APIs as child components to the main page. This was done by importing the component functions. This also introduced the LINK and BrowserRouter elements to be able to redirect the user to different pages while also being used to transfer information between the pages.
+  After we had finished our respective API instances, the next step was to introduce the two APIs as child components to the main page. This was done by importing the component functions. This also introduced the LINK and BrowserRouter elements to be able to redirect the user to different pages while also being used to transfer information between the pages.
 
 
 ![combining the API](src/images/Screenshot2021-10-29at13.05.52.png "combine the api")
@@ -67,7 +67,7 @@ Process:
 
 4. More info pages/ collection
 
-        After combining the main functionality of the app the next step was to create components for the ‘more information’ page and the ‘collection’ page. This was done by using the useParams function to ascertain which beer or meal was being viewed. The page will then use axios to request the meal or beer using the Id provided. The JSX formats the data and presents it in a legible manner. The collection page button updates when the user has made their decision and has confirmed it by clicking the prompt text. This state change allows the user to access the collection page where an Axios bulk Get request uses the local storage values.
+  After combining the main functionality of the app the next step was to create components for the ‘more information’ page and the ‘collection’ page. This was done by using the useParams function to ascertain which beer or meal was being viewed. The page will then use axios to request the meal or beer using the Id provided. The JSX formats the data and presents it in a legible manner. The collection page button updates when the user has made their decision and has confirmed it by clicking the prompt text. This state change allows the user to access the collection page where an Axios bulk Get request uses the local storage values.
 
 
 ![more info pages](src/images/Screenshot2021-10-29at13.06.43.png "more info pages")
@@ -75,7 +75,7 @@ Process:
 
 5. Aesthetics
 
-        Used CSS to represent the data coherently while also keeping consistency when viewed in different browser tab sizes and when different image sizes are displayed.
+  Used CSS to represent the data coherently while also keeping consistency when viewed in different browser tab sizes and when different image sizes are displayed.
 
 
 KnownErrors/Bugs:
