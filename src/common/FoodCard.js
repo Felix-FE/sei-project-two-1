@@ -36,7 +36,7 @@ function FoodCard() {
     if (length === 1) {
       const getInfoTwo = async () => {
         try {
-          const res = await axios.get('http://www.themealdb.com/api/json/v1/1/random.php')
+          const res = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
           setRandFood(res.data['meals'][0])
         } catch (err) {
           console.log(err)
@@ -60,7 +60,7 @@ function FoodCard() {
         }
       } else {
         try {
-          const res = await axios.get(`http://www.themealdb.com/api/json/v1/1/filter.php?a=${selection}`)
+          const res = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${selection}`)
           setFood(res.data)
           setLength(res.data['meals'].length)
         } catch (err) {
